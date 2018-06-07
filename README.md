@@ -31,11 +31,15 @@ reboot
 ```
 
 # Step 3
-The next step is to add reset_gpu.sh as a LogoutHook so that it runs the command mentioned in *Step 1* everytime your computer logouts
+The next step is to add reset_gpu.sh as a LogoutHook so that it runs the command mentioned in *Step 1* everytime your computer logouts.
+
+To do this open Terminal and enter the following:
 ```
 sudo defaults write com.apple.loginwindow LogoutHook /path/to/reset_gpu.sh
 ```
+This should be all you need to do, so I'd advise restarting your computer now and check that it boots again with the GPU disabled.
 
+# Footnotes
 LogoutHooks are deprecated by Apple now but this method still seems to work for me, using an early 2011 Macbook Pro 15" running OSX High Sierra
 
 For more on Login/LogoutHooks:
