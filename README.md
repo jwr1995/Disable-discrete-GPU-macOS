@@ -6,7 +6,7 @@ This method requires you to remove none of the AMD or NVDIA ".kext" files from y
 
 For proper usage follow these instructions (skip step 1 if you are still able to log in normally)
 
-## Step 1.
+## Step 1
 
 In order to disable the GPU first open your computer in single user mode (cmd + s) on startup.
 
