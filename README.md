@@ -1,5 +1,5 @@
 # MPB_GPU_fix
-### (NO need to remove .kext's or use a Linux distro)
+#### (A GPU disabling method with no need to remove .kext's or use a Linux distro)
 A simple shell script to disable discrete GPUs for MacBook Pros affected by GPU issues
 
 This method requires you to remove none of the AMD or NVDIA ".kext" files from your system folder as I have seen many other methods advocating doing
