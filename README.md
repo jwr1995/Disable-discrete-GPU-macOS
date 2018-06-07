@@ -1,12 +1,12 @@
 # MPB_GPU_fix
-# (NO NEED TO REMOVE .kext's)
+### (NO NEED TO REMOVE .kext's)
 A simple shell script to disable discrete GPUs for MacBook Pros affected by GPU issues
 
 This method requires you to remove none of the AMD or NVDIA ".kext" files from your system folder as I have seen many other methods advocating doing
 
 For proper usage follow these instructions (skip step 1 if you are still able to log in normally)
 
-# Step 1.
+## Step 1.
 
 In order to disable the GPU first open your computer in single user mode (cmd + s) on startup.
 
@@ -19,7 +19,7 @@ Then reboot your computer:
 reboot
 ```
 
-# Step 2
+## Step 2
 
 Log in normally
 
@@ -30,7 +30,7 @@ sh reset_gpu.sh
 reboot
 ```
 
-# Step 3
+## Step 3
 The next step is to add reset_gpu.sh as a LogoutHook so that it runs the command mentioned in *Step 1* everytime your computer logouts.
 
 To do this open Terminal and enter the following:
@@ -39,7 +39,7 @@ sudo defaults write com.apple.loginwindow LogoutHook /path/to/reset_gpu.sh
 ```
 This should be all you need to do, so I'd advise restarting your computer now and check that it boots again with the GPU disabled.
 
-# Footnotes
+## Footnotes
 LogoutHooks are deprecated by Apple now but this method still seems to work for me, using an early 2011 Macbook Pro 15" running OSX High Sierra
 
 For more on Login/LogoutHooks:
