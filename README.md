@@ -1,4 +1,4 @@
-# MPB_GPU_fix
+# Disable Discrete GPU (for MacBook Pros with GPU issues)
 #### (A GPU disabling method with no need to remove .kext's or use a Linux distro)
 A simple shell script to disable discrete GPUs for MacBook Pros affected by GPU issues
 
